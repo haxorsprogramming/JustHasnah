@@ -27,7 +27,7 @@
     <div> </div>
     <div class="container">
         <div class="row center-align" id='divBody' style='margin-top:30px;'>
-            <div class="col s12 l4" style="padding-top:12px;">
+            <div class="col s12 l4" style="padding-top:12px;" id='divSkill'>
                 <p>My Skills</p>
                 <div class="row">
                     <div class="col s6">HTML - CSS</div>
@@ -135,19 +135,36 @@
                         <div class="card">
                             <div class="card-image">
                                 <img :src="wl.pic">
-                                <span class="card-title white-text" style='background-color: rgba(38, 166, 154, 0.7);'>{{wl.title}}</span>
-                                <a class="btn-floating halfway-fab waves-effect waves-light red"><i
-                                        class="material-icons">chrome_reader_mode</i></a>
+                                <span class="card-title white-text" style='background-color: rgba(255, 255, 255, 0.7);'>
+                                <a href='#!'  v-on:click='bacaBacotan(wl.id)'>{{wl.title}}</a></span>
+                                <a class="btn-floating halfway-fab waves-effect waves-light red" href='#!' v-on:click='bacaBacotan(wl.id)'>
+                                    <i class="material-icons">chrome_reader_mode</i>
+                                </a>
                             </div>
                             <div class="card-content">
                                 <p>{{wl.teks}}</p>
                             </div>
                         </div>
                     </div>
-
                 </div>
+                <p>
+                    See my write on <a href='https://github.com/nadhaalditha' target="new">here</a>
+                </p>
             </div>
         </div>
+    </div>
+    <!-- //div bacotan -->
+    <div class="container" id='divBacotan'>
+    <div class="row">
+      <div class="col s12 center-align">
+          <img src='img/pos/pos_1.jpg' style="width: 900px;" class="responsive-img">
+          <p>
+          Hi ! Saya sedang membutuhkan jasa meningkatkan reputasi atau rating produk di TOKOPEDIA agar positioning merchant saya berada di 
+          urutan paling atas dan ketika customer mencari produk, yang muncul itu produk-produk saya.
+          </p>
+          <a href='#!'>Tengok tulisanku yg laen dulu bray ..</a> | <a href='#!' v-on:click='keAwal'>Balek ke awal webku pas siap loading</a>
+      </div>
+    </div>
     </div>
     <script src='js/hasnah.js'></script>
 </body>
