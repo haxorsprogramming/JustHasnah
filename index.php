@@ -13,6 +13,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
@@ -20,17 +21,15 @@
 </head>
 
 <body>
-    <div style='text-align:center;margin-top:20px;border:2px #1abc9c solid; border-radius : 20px;' class="container">
+    <div style='text-align:center;margin-top:20px;' class="container">
         <img src='img/my.jpg' class="circle">
-        <h3 class="light">Hi . . . Iam Hasnah</h3>
-        <p class="">
-            * Front End Dev | * Product Designer | * Opensource Addict | * Noob Writer
-        </p>
+        <h3 class="light" id='txtHeader'></h3>
+        <p class="" id='txtDeks'></p>
 
     </div>
     <div> </div>
     <div class="container">
-        <div class="row center-align" style='margin-top:30px;border:2px #1abc9c solid; border-radius : 20px;'>
+        <div class="row center-align" id='divBody' style='margin-top:30px;'>
             <div class="col s12 l4" style="padding-top:12px;">
                 <p>My Skills</p>
                 <div class="row">
@@ -75,13 +74,16 @@
                 </div>
             </div>
             <div class="col s12 l4" style="padding-top:12px;">
-                <p>My Porfolio</p>
+                
+            </div>
+            <div class="col s12 l4" style="padding-top:12px;">
+            <p>My Write</p>
                 <div class="row">
                         <div class="col s12 m12 l12">
                             <div class="card" >
                                 <div class="card-image">
                                     <img src="img/mm.jpg">
-                                    <span class="card-title">Card Title</span>
+                                    <span class="card-title indigo-text">Card Title</span>
                                     <a class="btn-floating halfway-fab waves-effect waves-light red"><i
                                             class="material-icons">chrome_reader_mode</i></a>
                                 </div>
@@ -94,12 +96,9 @@
                     
                 </div>
             </div>
-            <div class="col s12 l4" style="padding-top:12px;">
-                <p>My Write</p>
-            </div>
         </div>
     </div>
-
+<script src='js/hasnah.js'></script>
 </body>
 
 </html>
