@@ -29,89 +29,26 @@
         <div class="row center-align" id='divBody' style='margin-top:30px;'>
             <div class="col s12 l4" style="padding-top:12px;" id='divSkill'>
                 <p>My Skills</p>
-                <div class="row">
-                    <div class="col s6">HTML - CSS</div>
+                <div class="row" v-for='ds in dataSkill'>
+                    <div class="col s6">{{ds.title}}</div>
                     <div class="col s6">
                         <div class="progress">
-                            <div class="determinate" style="width: 80%"></div>
+                            <div class="determinate" :style='"width:"+ds.prog'></div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col s6">Vue Js</div>
-                    <div class="col s6">
-                        <div class="progress">
-                            <div class="determinate" style="width: 75%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s6">React Js</div>
-                    <div class="col s6">
-                        <div class="progress">
-                            <div class="determinate" style="width: 40%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s6">Figma</div>
-                    <div class="col s6">
-                        <div class="progress">
-                            <div class="determinate" style="width: 60%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s6">Photoshop</div>
-                    <div class="col s6">
-                        <div class="progress">
-                            <div class="determinate" style="width: 70%"></div>
-                        </div>
-                    </div>
-                </div>
+                
 
                 <p>My Passion</p>
-                <div class="row">
-                    <div class="col s6">Writing</div>
+                <div class="row" v-for='dp in dataPassion'>
+                    <div class="col s6">{{dp.title}}</div>
                     <div class="col s6">
                         <div class="progress">
-                            <div class="determinate" style="width: 70%"></div>
+                            <div class="determinate" :style='"width:"+dp.prog'></div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col s6">Bacot bacot</div>
-                    <div class="col s6">
-                        <div class="progress">
-                            <div class="determinate" style="width: 100%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s6">Travelling</div>
-                    <div class="col s6">
-                        <div class="progress">
-                            <div class="determinate" style="width: 50%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s6">Photography</div>
-                    <div class="col s6">
-                        <div class="progress">
-                            <div class="determinate" style="width: 80%"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s6">Mengkhayal</div>
-                    <div class="col s6">
-                        <div class="progress">
-                            <div class="determinate" style="width: 100%"></div>
-                        </div>
-                    </div>
-                </div>
-
+                
             </div>
             <div class="col s12 l4" style="padding-top:12px;" id='divWorks'>
                 <p>My Works & Portfolio</p>
@@ -158,10 +95,8 @@
     <div class="row">
       <div class="col s12 center-align">
           <img src='img/pos/pos_1.jpg' style="width: 900px;" class="responsive-img">
-          <p>
-          Hi ! Saya sedang membutuhkan jasa meningkatkan reputasi atau rating produk di TOKOPEDIA agar positioning merchant saya berada di 
-          urutan paling atas dan ketika customer mencari produk, yang muncul itu produk-produk saya.
-          </p>
+          <div id='isiBacotan'>
+            </div>
           <a href='#!'>Tengok tulisanku yg laen dulu bray ..</a> | <a href='#!' v-on:click='keAwal'>Balek ke awal webku pas siap loading</a>
       </div>
     </div>

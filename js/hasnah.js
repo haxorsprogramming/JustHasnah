@@ -11,15 +11,15 @@ var divWorks = new Vue({
         teks: "Application for managing small shop finances",
       },
       {
-        title: "IRA - Marsjuanda Clinic",
-        teks: "Image processing application for disease identification needs",
+        title: "Haxors Assistant",
+        teks: "Digital asistant for haxorsprogrammingclub",
       },
       {
         title: "Nadha Resto",
         teks: "Application for managing restaurant businesses",
       },
       {
-        title: "IRA - Trianda Hospital",
+        title: "IRA - RSUD Pasaman Barat",
         teks: "Image processing application for disease identification needs",
       },
       {
@@ -28,6 +28,26 @@ var divWorks = new Vue({
       },
     ],
   },
+});
+
+var divSkill = new Vue({
+    el : '#divSkill',
+    data : {
+        dataSkill : [
+            {title : 'Html - Css', prog : '85%'},
+            {title : 'Vue.Js', prog : '75%'},
+            {title : 'PHP - Sql', prog : '80%'},
+            {title : 'Figma', prog : '70%'},
+            {title : 'Photoshop', prog : '73%'}
+        ],
+        dataPassion : [
+            {title : 'Writing', prog : '65%'},
+            {title : 'Bacot bacot', prog : '100%'},
+            {title : 'Travelling', prog : '67%'},
+            {title : 'Photography', prog : '80%'},
+            {title : 'Mengkhayal', prog : '100%'}
+        ]
+    }
 });
 
 var divWrite = new Vue({
@@ -104,8 +124,12 @@ function teksKedua() {
 
 function bacaBacotan(id)
 {
-    $('#txtHeader').html("Lu bukan kyubi bro ..");
-    $('#txtDeks').html("Dilarang baper ... apalagi baca tulisan 'dilarang baper' ...");
-    $('#divBody').hide();
-    $('#divBacotan').fadeIn();
+    $.post('http://api.haxors.or.id/justhasnah/getBacotan.php', function(data){
+        let obj = JSON.parse(data);
+        $('#txtHeader').html(obj.judul);
+        $('#isiBacotan').html(obj.isi);
+        $('#txtDeks').html(obj.deks);
+        $('#divBody').hide();
+        $('#divBacotan').fadeIn();
+    });
 }
