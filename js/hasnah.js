@@ -15,8 +15,8 @@ var divWrite = new Vue({
     el : '#divWrite',
     data : {
         workWrite : [
-            {title : 'Lu bukan kiyubi bangsat...', teks : 'Eh goblok ... gak perlu marah marah ..'},
-            {title : 'Mouse komputer itu banyak halunya ...', teks : 'Eh goblok ... gak perlu marah marah ..'}
+            {title : 'Lu bukan kiyubi bangsat...', teks : 'Eh goblok ... gak perlu marah marah ..', pic : 'img/pos/pos_1.jpg'},
+            {title : 'Mouse komputer itu banyak halunya ...', teks : 'Aneh banget, dibaperin gak mempan ..',  pic : 'img/pos/pos_2.jpg'}
         ]
     }
 });

@@ -134,7 +134,7 @@
                     <div class="col s12 m12 l12">
                         <div class="card">
                             <div class="card-image">
-                                <img src="img/pos/pos_1.jpg">
+                                <img :src="wl.pic">
                                 <span class="card-title white-text" style='background-color: rgba(38, 166, 154, 0.7);'>{{wl.title}}</span>
                                 <a class="btn-floating halfway-fab waves-effect waves-light red"><i
                                         class="material-icons">chrome_reader_mode</i></a>
