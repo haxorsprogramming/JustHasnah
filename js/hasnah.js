@@ -92,7 +92,7 @@ var divBacotan = new Vue({
         keAwal : function()
         {
             $('#txtHeader').html("Hi ...  <br/>Iam Hasnah .. :)");
-            $('#txtDeks').html("Front End Dev |  Product Designer |  Opensource Addict | Noob Writer");
+            $('#txtDeks').html("Front End Dev |  Project Leader |  Opensource Lovers | Noob Writer");
             $('#divBacotan').hide();
             $('#divBody').fadeIn();
            
