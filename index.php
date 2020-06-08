@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=The+Girl+Next+Door&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -37,8 +38,6 @@
                         </div>
                     </div>
                 </div>
-                
-
                 <p>My Passion</p>
                 <div class="row" v-for='dp in dataPassion'>
                     <div class="col s6">{{dp.title}}</div>
@@ -48,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                
+                <p>Follow me on <a href='https://twitter.com/nadha_alditha'>Twitter</a></p>
             </div>
             <div class="col s12 l4" style="padding-top:12px;" id='divWorks'>
                 <p>My Works & Portfolio</p>
@@ -56,7 +55,7 @@
                     <li v-for='ls in workList'>
                         <div class="collapsible-header"><i class="material-icons">filter_vintage</i>{{ls.title}}</div>
                         <div class="collapsible-body">
-                            <img src='img/works/nadha_laundry.jpg' style="width: 150px;"><br/>    
+                            <img :src='ls.pic' style="width: 150px;"><br/>    
                         <span>{{ls.teks}}</span>
                         </div>
                     </li>

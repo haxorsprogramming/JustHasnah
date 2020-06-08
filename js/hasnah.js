@@ -5,26 +5,32 @@ var divWorks = new Vue({
       {
         title: "Nadha Laundry",
         teks: "Application for managing laundry businesses",
+        pic : 'img/works/nadha_laundry.jpg'
       },
       {
         title: "Kede Kita",
         teks: "Application for managing small shop finances",
+        pic : 'img/works/kede_kita_fix.jpg'
       },
       {
         title: "Haxors Assistant",
         teks: "Digital asistant for haxorsprogrammingclub",
+        pic : 'img/works/nadha_laundry.jpg'
       },
       {
         title: "Nadha Resto",
         teks: "Application for managing restaurant businesses",
+        pic : 'img/works/nadha_resto.png'
       },
       {
         title: "IRA - RSUD Pasaman Barat",
         teks: "Image processing application for disease identification needs",
+        pic : 'img/works/nadha_laundry.jpg'
       },
       {
         title: "Rental Manager - Pulomas Residence",
         teks: "Application for rental ",
+        pic : 'img/works/nadha_laundry.jpg'
       },
     ],
   },
