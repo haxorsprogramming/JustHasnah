@@ -21,7 +21,7 @@
 
 <body>
     <div style='text-align:center;margin-top:20px;border-radius:2px #ecf0f1 solid;' class="container" id='divUtama'>
-        <img src='img/my.jpg' class="circle" style="border:7px solid #26a69a;">
+        <img src='img/pi12o.png' class="circle" style="width:220px;border:3px solid #26a69a;">
         <h3 class="light" id='txtHeader'></h3>
         <p class="" id='txtDeks'></p>
     </div>
